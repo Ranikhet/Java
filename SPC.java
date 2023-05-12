@@ -1,4 +1,9 @@
+/**
+ * @author Kireet
+ *
 // solution to producer consumer problem
+ */
+
 
 class Shop
 {
