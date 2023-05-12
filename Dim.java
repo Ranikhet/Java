@@ -1,4 +1,9 @@
+/**
+ * @author Kireet
+ *
 // using runnable interface
+ */
+
 class Mythread5 implements Runnable
 {
 	public void run()
