@@ -1,4 +1,9 @@
-// synchronized block
+
+/**
+ * @author Kireet
+ *
+ // synchronized block
+ */
 class college1
 {
 	 void print(String Faculty)
