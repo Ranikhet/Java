@@ -1,3 +1,7 @@
+/**
+ * @author Kireet
+ *
+ */
 class Shop
 {
 	int item;
