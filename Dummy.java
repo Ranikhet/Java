@@ -1,4 +1,9 @@
+/**
+ * @author Kireet
+ *
 // synchronized method
+ */
+
 class college
 {
 	synchronized void print(String Faculty)
