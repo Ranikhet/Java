@@ -1,7 +1,7 @@
 
 class A
 {
- void foo()
+ protected void foo()
 	{
 		System.out.println("superclass");
 	}
@@ -22,8 +22,8 @@ public class InherTest {
 	public static void main(String[] args) {
 
 
-		B ob=new B();
-		ob.foo();
-		ob.foo1();
+		A ob=new A();
+		ob.foo();//A
+	//	ob.foo1();//B
 	}
 }
