@@ -13,8 +13,6 @@ public class JD1{
 			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/secd","root","root"); //attempts to establish a connection to the database by using the given database URL
 			System.out.println("connection establised successfully");
 			Statement st= con.createStatement();// Creates a Statement object for sending SQL statements to the database.
-			PreparedStatement st1= con.prepareStatement("insert into java values(? ?)");
-			int x=st1.executeUpdate();
 			ResultSet rs=st.executeQuery("select * from java");
 			while(rs.next()) // processing the next record
 			{
