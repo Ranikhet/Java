@@ -16,7 +16,7 @@ public class JD1{
 			ResultSet rs=st.executeQuery("select * from java");
 			while(rs.next()) // processing the next record
 			{
-				System.out.println(rs.setString(1)+" "+rs.setInt(2));
+				System.out.println(rs.getString(1)+" "+rs.getInt(2));
 
 			} 
 			con.close();
