@@ -1,27 +1,27 @@
 
-//Thread creation using Thread class to run our task
-
-class MyThread extends Thread 
+class Gen1<P>
 {
-	public void run()
+	P ob;
+	Gen1(P ob)
 	{
-		for(int i=0;i<10;i++)
-		{
-			System.out.println("im a child thread");
-
-		}
+		this.ob=ob;
+	}
+	public P get()
+	{
+		return ob;
+	}
+	public void display()
+	{
+		
+System.out.println("name of class "+ob.getClass().getName());		
 	}
 }
-public class Demo
-{
-	public static void main(String[] args) 
-	{
-		MyThread ob= new MyThread();
-		ob.start();
-		for(int i=0;i<=5;i++)
-		{
-			System.out.println("Im main thread");
 
-		}
-	}
+public class Demo {
+public static void main(String[] args) {
+	Gen1<Boolean> g= new Gen1<>(false);
+	g.display();
+System.out.println(g.get());
+	
+}
 }

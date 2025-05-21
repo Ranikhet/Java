@@ -33,12 +33,14 @@ public class WinEvent extends Frame implements WindowListener
 	public void windowClosing(WindowEvent e) {
 		// TODO Auto-generated method stub
 		dispose();
-		System.out.println("closed");
+	
+		
 	}
 
 
 	@Override
 	public void windowClosed(WindowEvent e) {
+		System.out.println("closed");
 		// TODO Auto-generated method stub
 		
 	}
