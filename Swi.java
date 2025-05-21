@@ -1,8 +1,4 @@
-/**
- * @author Kireet
- *
- */
-import java.awt.FlowLayout;
+import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 public class Swi extends JFrame implements ActionListener
@@ -10,10 +6,10 @@ public class Swi extends JFrame implements ActionListener
 JLabel l1= new JLabel("Enter number 1");
 JLabel l2= new JLabel("Enter number 2");
 JLabel l3= new JLabel("Sum ");
-JButton b= new JButton("ADD");
 JTextField tf1= new JTextField(10);
 JTextField tf2= new JTextField(10);
 JTextField tf3= new JTextField(10);
+JButton b= new JButton("ADD");
 public Swi()
 {
 	add(l1);
@@ -23,16 +19,21 @@ public Swi()
 	add(l3);
 	add(tf3);
 	add(b);
+	  
 	setVisible(true);
 	setSize(400,300);
-    setLayout(new FlowLayout(FlowLayout.LEFT,150,10));
-	b.addActionListener(this);
-	setDefaultCloseOperation(EXIT_ON_CLOSE);
+    setTitle("Addition Application");
+	setLayout(new FlowLayout(FlowLayout.CENTER,60,30));
+	b.addActionListener(this); // component registered
+	getContentPane().setBackground(Color.yellow);
+	
+	
 }
 
 @Override
-public void actionPerformed(ActionEvent e) {
+public void actionPerformed(ActionEvent e) { // callback function
 	// TODO Auto-generated method stub
+
 	int a= Integer.parseInt(tf1.getText());
 	int b= Integer.parseInt(tf2.getText());
 	int c=a+b;
@@ -42,4 +43,3 @@ public static void main(String[] args) {
 	Swi ob= new Swi();
 }
 }
- 
